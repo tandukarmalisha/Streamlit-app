@@ -19,7 +19,7 @@ def get_db_connection():
         database=os.getenv("DB_NAME"),
         user=os.getenv("DB_USER"),
         password=os.getenv("DB_PASS"),
-        port=os.getenv("DB_PORT", "6543") # Default to 5432 if port is missing
+        port=os.getenv("DB_PORT", "5432") # Default to 5432 if port is missing
     )
 
 uploaded_file = st.file_uploader("Upload Excel File", type=["xlsx"])
